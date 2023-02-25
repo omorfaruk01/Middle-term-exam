@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formSection {
+    max-width: 100%;
+    height: 100vh;
+    background-color: gainsboro;
+    position: relative;
+}
+
+.formParent {
+    max-width: 80%;
+    max-height: 95%;
+    background: rgba(120, 120, 120, 0.20);
+    padding: 50px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+
+}
+
+.formHeading {
+    font-size: 20px;
+    color: crimson;
+}
+
+.formTable #firstname, #lastname, #email, #password {
+    width: 100%;
+    font-size: 16px;
+    padding: 5px 5px;
+    border: 1px solid rgba(26, 24, 24, 0.373);
+    border-radius: 5px;
+}
+
+#code {
+    width: 33%;
+    font-size: 13px;
+    padding: 5px 5px;
+    border: 1px solid rgba(26, 24, 24, 0.373);
+    border-radius: 5px;
+    background: white;
+}
+#phone {
+    width: 65%;
+    font-size: 15px;
+    padding: 5px 5px;
+    border: 1px solid rgba(26, 24, 24, 0.373);
+    border-radius: 5px;
+    background: white;
+}
+
+#country {
+    width: 49%;
+    font-size: 15px;
+    padding: 5px 5px;
+    border: 1px solid rgba(26, 24, 24, 0.373);
+    border-radius: 5px;
+    background: white;
+}
+
+#state {
+    width: 49%;
+    font-size: 15px;
+    padding: 5px 5px;
+    border: 1px solid rgba(26, 24, 24, 0.373);
+    border-radius: 5px;
+    background: white;
+}
+
+.male, .female, .others {
+    margin: 0 18px 0 0;
+    font-size: 18px;
+}
+
+#male, #female, #others {
+    margin: 0 5px 0 0;
+}
+
+#submit {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #2222b9af, #dfdf39);
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin: 0 10px 0 0;
+    letter-spacing: 1px;
+
+}
+
+#reset {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: repeating-linear-gradient(to right, #cd29d386 0% 10%, #13dd789a 10% 20%);
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    letter-spacing: 1px;
+
+}
