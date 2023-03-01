@@ -7,15 +7,13 @@
 
 .myShoppingCart-section {
     width: 100%;
-    height: 900px;
-    /* background: gainsboro; */
+    height: 800px;
     position: relative;
 }
 
 .myShoppingCart-parent {
     width: 95%;
     height: 95%;
-    /* background: darkcyan; */
     position: relative;
     position: absolute;
     top: 50%;
@@ -136,33 +134,47 @@
     transform: translate(-20%, -50%);
 }
 
-.one-phoneMinus, .two-phoneMinus {
+.one-phoneMinus button, .two-phoneMinus button {
+    padding: 5px 5px 5px 5px;
     font-size: 20px;
     position: absolute;
     top: 50%;
-    left: 64%;
-    transform: translate(-64%, -50%);
+    left: 55%;
+    transform: translate(-55%, -50%);
     cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background: none;
 }
 
-.one-phoneAmount, .two-phoneAmount {
+.one-phoneAmount .phone-p-m, .two-phoneAmount .phone-p-m {
+    width: 12%;
     font-size: 20px;
     background: gainsboro;
     padding: 5px 20px;
     border-radius: 3px;
     position: absolute;
     top: 50%;
-    left: 70%;
-    transform: translate(-70%, -50%);
+    left: 65%;
+    transform: translate(-65%, -50%);
+    border: none;
+    outline: none;
+    object-fit: contain;
 }
 
-.one-phonePlus, .two-phonePlus {
+.one-phonePlus button, .two-phonePlus button{
+    padding: 5px 5px 5px 5px;
     font-size: 20px;
     position: absolute;
     top: 50%;
-    left: 75%;
-    transform: translate(-75%, -50%);
+    left: 72%;
+    transform: translate(-72%, -50%);
     cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background: none;
 }
 
 .one-phonePrice, .two-phonePrice {
@@ -223,7 +235,7 @@
 /* ================   amount section end,   button section start  ============= */
 
 
-.btn {
+.btn1 {
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -238,4 +250,460 @@
     right: 4%;
     transform: translate(-4%, -3%);
 
+}
+
+/* ========================================  mobile responsive start ===================== */
+
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+    .myShoppingCart-parent {
+        width: 95%;
+        height: 95%;
+        text-align: center;
+    }
+    /* =================== myShopping start ==================== */
+    .myShopping {
+        font-size: 18px;
+
+    }
+
+    /* =================== myShopping end =================== */
+
+    .choosePhoneParent {
+        width: 95%;
+        height: 85%;
+    }
+
+
+    .onePhone-parent {
+        width: 95%;
+        height: 20%;
+    }
+
+    .twoPhone-parent {
+        width: 95%;
+        height: 20%;
+    }
+    /* ====================  phone details start =================== */
+
+    .one-phone img, .two-phone img {
+        width: 30px;
+        height: 60px;
+        object-fit: contain;
+    }
+
+    .one-phoneName, .two-phoneName {
+        font-size: 9px;
+        position: absolute;
+        top: 75%;
+        left: 5%;
+        transform: translate(-5%, -75%);
+    }
+
+    .one-phoneMinus button, .two-phoneMinus button {
+        padding: 3px 3px 3px 3px;
+        font-size: 12px;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-25%, -50%)
+    }
+
+    .one-phoneAmount .phone-p-m, .two-phoneAmount .phone-p-m {
+    width: 25%;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-45%, -50%);
+
+
+    }
+
+    .one-phonePlus button, .two-phonePlus button{
+        padding: 3px 3px 3px 3px;
+        font-size: 12px;
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        transform: translate(-65%, -50%);
+    }
+
+    .one-phonePrice, .two-phonePrice {
+        font-size: 12px;
+    }
+
+    .one-phoneDataReset img, .two-phoneDataReset img {
+        width: 15px;
+        height: 15px;
+        object-fit: contain;
+    }
+
+
+    .phoneTotal-parent {
+        font-size: 12px;
+    }
+
+    /* ================  phone details end,  amount section start  ============= */
+
+    .phoneTotal-parent .phoneTotal {
+        letter-spacing: 0.6px;
+        line-height: 25px;
+    }
+    .phoneTotal-parent .phoneTotalAmount {
+
+        letter-spacing: 0.6px;
+        line-height: 25px;
+    }
+    /* ================   amount section end,   button section start  ============= */
+
+
+    .btn1 {
+
+        font-size: 10px;
+        letter-spacing: 1px;
+        padding: 10px 12px;
+
+    }
+}
+
+/* ============================== 400-600px responsive start ============================ */
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+    .myShoppingCart-parent {
+        width: 95%;
+        height: 95%;
+        text-align: center;
+    }
+    /* =================== myShopping start ==================== */
+    .myShopping {
+        font-size: 25px;
+
+    }
+
+    /* =================== myShopping end =================== */
+
+    .choosePhoneParent {
+        width: 95%;
+        height: 85%;
+    }
+
+
+    .onePhone-parent {
+        width: 95%;
+        height: 20%;
+    }
+
+    .twoPhone-parent {
+        width: 95%;
+        height: 20%;
+    }
+    /* ====================  phone details start =================== */
+
+    .one-phone img, .two-phone img {
+        width: 40px;
+        height: 80px;
+        object-fit: contain;
+    }
+
+    .one-phoneName, .two-phoneName {
+        font-size: 10px;
+        position: absolute;
+        top: 75%;
+        left: 5%;
+        transform: translate(-5%, -75%);
+    }
+
+    .one-phoneMinus button, .two-phoneMinus button {
+        padding: 4px 4px 4px 4px;
+        font-size: 14px;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-25%, -50%)
+    }
+
+    .one-phoneAmount .phone-p-m, .two-phoneAmount .phone-p-m {
+    width: 25%;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-45%, -50%);
+
+
+    }
+
+    .one-phonePlus button, .two-phonePlus button{
+        padding: 4px 4px 4px 4px;
+        font-size: 12px;
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        transform: translate(-65%, -50%);
+    }
+
+    .one-phonePrice, .two-phonePrice {
+        font-size: 14px;
+    }
+
+    .one-phoneDataReset img, .two-phoneDataReset img {
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+    }
+
+
+    .phoneTotal-parent {
+        font-size: 14px;
+    }
+
+    /* ========  phone details end,  amount section start  ========= */
+
+    .phoneTotal-parent .phoneTotal {
+        letter-spacing: 0.6px;
+        line-height: 25px;
+    }
+    .phoneTotal-parent .phoneTotalAmount {
+
+        letter-spacing: 0.6px;
+        line-height: 25px;
+    }
+    /* =========  amount section end,   button section start  ========= */
+
+
+    .btn1 {
+
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding: 10px 12px;
+
+    }
+}
+
+/* ============================== 601-800px responsive start ============================ */
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+    .myShoppingCart-parent {
+        width: 95%;
+        height: 95%;
+        text-align: center;
+    }
+    /* =================== myShopping start ==================== */
+    .myShopping {
+        font-size: 25px;
+
+    }
+
+    /* =================== myShopping end =================== */
+
+    .choosePhoneParent {
+        width: 95%;
+        height: 80%;
+    }
+
+
+    .onePhone-parent {
+        width: 95%;
+        height: 20%;
+    }
+
+    .twoPhone-parent {
+        width: 95%;
+        height: 20%;
+    }
+    /* ====================  phone details start =================== */
+
+    .one-phone img, .two-phone img {
+        width: 60px;
+        height: 120px;
+        object-fit: contain;
+    }
+
+    .one-phoneName, .two-phoneName {
+        font-size: 14px;
+        position: absolute;
+        top: 50%;
+        left: 18%;
+        transform: translate(-18%, -50%);
+    }
+
+    .one-phoneMinus button, .two-phoneMinus button {
+        padding: 4px;
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        left: 48%;
+        transform: translate(-48%, -50%)
+    }
+
+    .one-phoneAmount .phone-p-m, .two-phoneAmount .phone-p-m {
+    width: 15%;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-60%, -50%);
+
+
+    }
+
+    .one-phonePlus button, .two-phonePlus button{
+        padding: 4px 4px 4px 4px;
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-70%, -50%);
+    }
+
+    .one-phonePrice, .two-phonePrice {
+        font-size: 16px;
+    }
+
+    .one-phoneDataReset img, .two-phoneDataReset img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+
+
+    .phoneTotal-parent {
+        font-size: 16px;
+    }
+
+    /* ================  phone details end,  amount section start  ============= */
+
+    .phoneTotal-parent .phoneTotal {
+        letter-spacing: 0.6px;
+        line-height: 25px;
+    }
+    .phoneTotal-parent .phoneTotalAmount {
+
+        letter-spacing: 0.6px;
+        line-height: 25px;
+    }
+    /* ================   amount section end,   button section start  ============= */
+
+
+    .btn1 {
+
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding: 10px 12px;
+
+    }
+}
+
+/* ============================== 801-1000px responsive start ============================ */
+
+@media only screen and (min-width: 801px) and (max-width: 1000px) {
+    .myShoppingCart-parent {
+        width: 95%;
+        height: 95%;
+        text-align: center;
+    }
+    /* =================== myShopping start ==================== */
+    .myShopping {
+        font-size: 30px;
+
+    }
+
+    /* =================== myShopping end =================== */
+
+    .choosePhoneParent {
+        width: 95%;
+        height: 80%;
+    }
+
+
+    .onePhone-parent {
+        width: 95%;
+        height: 20%;
+    }
+
+    .twoPhone-parent {
+        width: 95%;
+        height: 20%;
+    }
+    /* ====================  phone details start =================== */
+
+    .one-phone img, .two-phone img {
+        width: 60px;
+        height: 120px;
+        object-fit: contain;
+    }
+
+    .one-phoneName, .two-phoneName {
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-20%, -50%);
+    }
+
+    .one-phoneMinus button, .two-phoneMinus button {
+        padding: 5px;
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+
+    .one-phoneAmount .phone-p-m, .two-phoneAmount .phone-p-m {
+    width: 10%;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-60%, -50%);
+
+
+    }
+
+    .one-phonePlus button, .two-phonePlus button{
+        padding: 5px;
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-70%, -50%);
+    }
+
+    .one-phonePrice, .two-phonePrice {
+        font-size: 16px;
+    }
+
+    .one-phoneDataReset img, .two-phoneDataReset img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+
+
+    .phoneTotal-parent {
+        font-size: 16px;
+    }
+
+    /* ================  phone details end,  amount section start  ============= */
+
+    .phoneTotal-parent .phoneTotal {
+        letter-spacing: 0.6px;
+        line-height: 25px;
+    }
+    .phoneTotal-parent .phoneTotalAmount {
+
+        letter-spacing: 0.6px;
+        line-height: 25px;
+    }
+    /* ================   amount section end,   button section start  ============= */
+
+
+    .btn1 {
+
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding: 10px 12px;
+
+    }
 }

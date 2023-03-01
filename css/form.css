@@ -7,7 +7,7 @@
 
 .formSection {
     max-width: 100%;
-    height: 100vh;
+    height: 630px;
     background-color: gainsboro;
     position: relative;
 }
@@ -31,9 +31,12 @@
 .formHeading {
     font-size: 20px;
     color: crimson;
+    margin-top: -28px;
 }
 
-.formTable #firstname, #lastname, #email, #password {
+
+
+.formTable #firstName, #lastName, #email, #password {
     width: 100%;
     font-size: 16px;
     padding: 5px 5px;
@@ -110,4 +113,140 @@
     border-radius: 3px;
     letter-spacing: 1px;
 
+}
+
+#form-element {
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 0px;
+}
+
+
+
+/* ================== Responsive css  start ================== */
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 360px) and (max-width: 747px) {
+
+
+    .formSection {
+        max-width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .formParent {
+        width: 100%;
+        padding: 20px;
+        background: white;
+        position: relative;
+        box-sizing: border-box;
+        margin: 80px auto 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .formHeading {
+        font-size: 15px;
+        color: crimson;
+        margin: px;
+    }
+
+    .formTable {
+        width: 100%;
+        margin: 0px auto 0 auto;
+
+    }
+
+    #form-element {
+        width: 100%;
+        background: gainsboro;
+        padding: 20px;
+        border-radius: 5px;
+
+    }
+
+
+    .male, .female, .others {
+        margin: 0 8px 0 0;
+        font-size: 15px;
+    }
+
+    #male, #female, #others {
+        margin: 0 2px 0 0;
+    }
+
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+
+    .formTable #firstName, #lastName, #email, #password {
+        width: 90%;
+        font-size: 15px;
+        padding: 4px 4px;
+
+    }
+
+    #code {
+        width: 29%;
+        font-size: 14px;
+        padding: 4px 4px;
+
+    }
+    #phone {
+        width: 59%;
+        font-size: 14px;
+        padding: 4px 4px;
+    }
+
+    #country {
+        width: 44%;
+        font-size: 14px;
+        padding: 4px 4px;
+
+    }
+
+    #state {
+        width: 44%;
+        font-size: 14px;
+        padding: 4px 4px;
+
+    }
+
+    .male, .female, .others {
+        font-size: 14px;
+    }
+
+    #male, #female, #others {
+        margin: 0 4px 0 0;
+    }
+
+    #submit {
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        padding: 8px 16px;
+        margin: 0 8px 0 0;
+
+
+    }
+
+    #reset {
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        padding: 8px 16px;
+    }
 }

@@ -36,7 +36,7 @@
 }
 
 .logInParent {
-    width: 80%;
+    width: 90%;
     height: 250px;
     background: rgba(133, 228, 235, 0.349);
     border-radius: 5px;
@@ -51,9 +51,9 @@
 .logInForm {
     position: absolute;
     top: 50%;
-    left: 5%;
-    transform: translate(-5%, -50%);
-    line-height: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 55px;
 }
 
 .logInForm h3 {
@@ -90,4 +90,215 @@
     border-radius: 5px;
     background: orangered;
     cursor: pointer;
+}
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 373px) {
+    .logIn-section {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .logInWelcomeParent {
+        width: 95%;
+        height: 400px;
+
+    }
+
+    .welcome {
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+
+    .welcome .myBank {
+        color: darkorchid;
+    }
+
+    .logInParent {
+        width: 90%;
+        height: 250px;
+
+    }
+
+    .logInForm {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        line-height: 55px;
+    }
+
+    .logInForm h3 {
+        color: rgb(63, 57, 57);
+    }
+
+    .logInForm .loginEmail {
+        width: 270px;
+        height: 28px;
+        font-size: 14px;
+        padding: 7px 10px;
+    }
+
+    .logInForm .loginpassword {
+        width: 270px;
+        height: 28px;
+        font-size: 14px;
+        padding: 7px 10px;
+    }
+
+    .logInForm .loginButton {
+        font-size: 12px;
+        padding: 5px 10px;
+
+    }
+}
+
+
+
+
+@media only screen and (min-width: 374px) and (max-width: 600px) {
+    .logIn-section {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .logInWelcomeParent {
+        width: 95%;
+        height: 400px;
+
+    }
+
+    .welcome {
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+
+    .welcome .myBank {
+        color: darkorchid;
+    }
+
+    .logInParent {
+        width: 90%;
+        height: 250px;
+
+    }
+
+    .logInForm {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        line-height: 55px;
+    }
+
+    .logInForm h3 {
+        color: rgb(63, 57, 57);
+    }
+
+    .logInForm .loginEmail {
+        width: 300px;
+        height: 28px;
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .logInForm .loginpassword {
+        width: 300px;
+        height: 28px;
+        font-size: 16px;
+        padding: 7px 10px;
+    }
+
+    .logInForm .loginButton {
+        font-size: 13px;
+        padding: 6px 12px;
+
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 780px) {
+    .logIn-section {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .logInWelcomeParent {
+        width: 95%;
+        height: 400px;
+
+    }
+
+    .welcome {
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+
+    .welcome .myBank {
+        color: darkorchid;
+    }
+
+    .logInParent {
+        width: 90%;
+        height: 250px;
+
+    }
+
+    .logInForm {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        line-height: 55px;
+    }
+
+    .logInForm h3 {
+        color: rgb(63, 57, 57);
+    }
+
+    .logInForm .loginEmail {
+        width: 500px;
+        height: 30px;
+        font-size: 18px;
+        padding: 7px 10px;
+    }
+
+    .logInForm .loginpassword {
+        width: 500px;
+        height: 30px;
+        font-size: 18px;
+        padding: 7px 10px;
+    }
+
+    .logInForm .loginButton {
+        font-size: 14px;
+        padding: 8px 14px;
+
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+    .logInParent {
+        width: 80%;
+        height: 250px;
+
+    }
+}
+
+@media only screen and (min-width: 1401px) and (max-width: 4000px) {
+    .logInParent {
+        width: 50%;
+        height: 300px;
+
+    }
+
+
+
 }

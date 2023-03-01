@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>log in</title>
+    <title>Log in</title>
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <section class="logIn-section">
         <div class="logInWelcomeParent">
 
             <div class="welcome">
-                <h1>Welcome to <span class="myBank">My Bank</span> !!!!</h1>
+                <h1>Welcome to<span class="myBank">My Bank</span> !!!!</h1>
             </div>
 
             <div class="logInParent">
-                <di class="logInForm">
+                <div class="logInForm">
                     <div><h3>Please Login</h3></div>
-                    <div><input type="text" class="loginEmail" placeholder="Enter Your Email"></div>
-                    <div><input type="password" class="loginpassword" placeholder="Enter Your Password"></div>
-                    <button type="button" class="loginButton" id="login-id">Submit</button>
+                    <div><input type="text" class="loginEmail" id="login-email" placeholder="Enter Your Email" required></div>
+                    <div><input type="password" class="loginpassword" id="login-password" placeholder="Enter Your Password" required></div>
+                    <button type="button" class="loginButton" id="login-id">Log in</button>
                 </div>
             </div>
 
         </div>
     </section>
+
+    <script src="js/login.js"></script>
 </body>
 </html>
